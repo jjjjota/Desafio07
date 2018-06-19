@@ -1,7 +1,9 @@
 /* HEADER *********************************************************************/
 header.jumbotron {
     background-image: url(assets/images/bg2.jpg);
-    background-size: 100%;
+
+    background-size: cover; /* NOTE: TO SCALE THE IMAGE */
+    background-position: center; /* NOTE: TO CENTER THE IMAGE */
 }
 
 header .container {
@@ -10,19 +12,21 @@ header .container {
     color: #FFF;
 }
 
-header button.contacto {
+header button.button_contacto {
     background-color: #FFF;
     color: #000;
 }
 
 /* GRILLA *********************************************************************/
 .thumbnail {
+    box-sizing: border-box;
     padding: 0;
     border-width: 10px;
     border-radius: 30px;
 }
 
 .photo_container {
+    box-sizing: border-box;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -40,6 +44,10 @@ header button.contacto {
 
 .photo_container button {
     margin-top: 20px;
+}
+
+button.button_grid {
+    padding: 5px 15px;
 }
 
 /* FOOTER *********************************************************************/
